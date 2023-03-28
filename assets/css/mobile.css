@@ -1,9 +1,20 @@
-@media screen and (max-width:1080px) { 
-
+@media screen and (max-width:1080px) {
+/*반응형 수정 2023.03.28 유지혜 */
+.menu_open .menu_wrap .menu_notice .menu_img{display: none;}
+.pr_content.notice .gallery .portfolio_list .portfolio_list_inner{ max-width: 330px;}
 }
 @media screen and (max-width:768px) {
+  /*반응형 수정 2023.03.28 유지혜  */
+  html,body{font-size: 10px;}
+  /* header  */
+  header nav{display: none}
+  .header_container{margin: 0 2.5rem;}
+  /* project */
+  .pr_content.notice .filter{flex-direction: column-reverse;}
+
 
   }
 @media screen and (max-width:360px) {
+
 
   }
