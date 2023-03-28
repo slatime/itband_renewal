@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="ITBAND홈페이지 입니다.">
+    <title>무한한 가치를 더하다 - ITBAND</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <link rel="stylesheet" href="/assets/css/light.css">
+    <link rel="stylesheet" href="/assets/css/font.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/jquery.mousewheel.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/project.js"></script>
+</head>
+
+<body data-theme="">
+    <input type="hidden" value="light" id="mode">
+    <div id="wrap">
+        <header>
+            <div class="header_container">
+
+                <h1 class="logo">
+                    <a href="/intro"><img src="/assets/img/logo/logo.png" alt="logo"></a>
+                </h1>
+                <nav>
+                    <ul class="">
+                        <li><a id="about" href="/about" class="en_txt ftc_white ftwB" href="#">ABOUT</a></li>
+                        <li><a id="project" href="/project" class="en_txt ftc_white ftwB" href="#">PROJECT</a></li>
+                        <li><a id="people" href="/people" class="en_txt ftc_white ftwB" href="#">CULTURE</a></li>
+                        <li><a id="contact" href="/contact" class="en_txt ftc_white ftwB" href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="color_btn" onclick="changeMode()">
+                    <span class="en_txt ftw300">mode</span>
+                </a>
+
+                <div class="main_menu" onclick="menuTrigger()">
+                    <div type="button" name="" class="btn_open">
+                        <img src="/assets/img/icon/head_open.png" alt="head_open">
+                    </div>
+                    <div type="button" name="" class="btn_close">
+                        <img src="/assets/img/icon/head_close.png" alt="head_close">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu_open on">
+            <div class="menu_wrap">
+                <div class="menu_notice">
+                    <ul class="menu_top mgt60">
+                        <li><a href="/about" class="en_txt ftw600 ftc_666">About</a></li>
+                        <li><a href="/project" class="en_txt ftw600 ftc_666">Project</a></li>
+                        <li class="people"><a href="/people" class="en_txt ftw600 ftc_666">Culture</a>
+
+                        </li>
+                        <li><a href="/contact" class="en_txt ftw600 ftc_666">Contact us</a></li>
+                    </ul>
+                    <ul class="menu_bottom">
+                        <li class="mgr60">
+                            <a href="/assets/web/viewer.html?file=itbandCompany2022.pdf"><span><img
+                                        src="/assets/img/icon/sub_menu_icon01.png" alt="sub_menu_icon"></span><span
+                                    class="ftc_white">회사소개서</span></a>
+                            <br>
+                            <iframe src="/assets/web/viewer.html?file=itbandCompany2022.pdf"
+                                style="width:100%; display:none;"></iframe>
+                        </li>
+                        <li class="mgr60"><a href="mailto:help@itband.co.kr" class="en_txt ftc_white"><span><img
+                                        src="/assets/img/icon/sub_menu_icon02.png"
+                                        alt="sub_menu_icon"></span><span>help@itband.co.kr</span></a></li>
+                        <li><a href="tel:042-716-7088" class="en_txt ftc_white"><span><img
+                                        src="/assets/img/icon/sub_menu_icon03.png"
+                                        alt="sub_menu_icon"></span><span>042-716-7088</span></a></li>
+                    </ul>
+                    <ul class="menu_img">
+                        <img src="/assets/img/logo/logo02.png" alt="logo02">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu_bg"></div>
+        <div class="container" data-menu="project">
+            <section class="pr_content notice first">
+                <h3 class="en_txt ftc_white ftwB mgb100">Project</h3>
+                <ul class="filter">
+                    <li>
+                        <a href="#" class="ftc_999 ftw400 select on">Business</a>
+                        <ul class="portfolio_lnb ftw300 on" id="categorySearch">
+                            <li class="mgb10 cur">Business</li>
+                            <li class="mgb10 cur" value="기업PR"># 기업PR</li>
+                            <li class="mgb10 cur" value="SI"># SI</li>
+                            <li class="mgb10 cur" value="SM"># SM</li>
+                            <li class="mgb10 cur" value="기타"># 기타</li>
+                        </ul>
+                    </li>
+
+                    <li class="search_area">
+                        <label for="keyword" class=""></label>
+                        <input type="text" id="keyword" name="keyword" value="" class="keyword"
+                            placeholder="검색어를 입력하세요.">
+                        <input type="button" id="searchBtn" class="search btn-search uk-button uk-button-default"
+                            onclick="searchProject()">
+                    </li>
+                </ul>
+                <ul class="gallery portfolio-container mgt40">
+
+                    <li class="portfolio_list" id="15">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/c03900a948291c5c789e84a7cfadbbdb.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">한국철도공사</p>
+                                    <p class="title ftc_white ftwB">경영정보시스템 고도화</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="14">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/1e4ad080d5a20863ef1dad888c2de9de.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">i · origin</p>
+                                    <p class="title ftc_white ftwB">FTA 솔루션 고도화</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="13">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/06d96486498059e9f651627cb11d0427.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">통계청</p>
+                                    <p class="title ftc_white ftwB">SGIS 일자리맵</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="12">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/e35fdf4edb1efa6d1b0d80869803fe8b.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">통계청</p>
+                                    <p class="title ftc_white ftwB">SGIS 총조사시각화지도 </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="11">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/5d1a1331a21bc6542f43baad70ceafa5.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">통계청</p>
+                                    <p class="title ftc_white ftwB">SGIS My통계로</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="10">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/db1d2c4ddc4c83c5e64efdee8aadefab.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">소상공인진흥공단</p>
+                                    <p class="title ftc_white ftwB">상권정보시스템 서비스 고도화</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="9">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/0ebd731dbd9b056d92ab520142ed0a52.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">신한관세법인 </p>
+                                    <p class="title ftc_white ftwB">KORD 베트남 FTA 솔루션 구축</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="8">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/9ac3a71e39a9e572fdc1e62a23635d81.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">㈜지앤네트웍스</p>
+                                    <p class="title ftc_white ftwB">지앤샵 모바일 쇼핑몰 구축</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="7">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/7cd2d47a6602952a1e564efd3d76f8e1.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">관세청</p>
+                                    <p class="title ftc_white ftwB">WCO ESA ROCB 웹사이트 개발</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="6">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/3e734c8da0c1ad6d7c1b0dfa0f8e146f.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">관세청</p>
+                                    <p class="title ftc_white ftwB">RILO AP 웹사이트 개발</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="4">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/77a41c3feeab3279cca64e06ad1da8c9.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">관세청</p>
+                                    <p class="title ftc_white ftwB">포트패스 어플리케이션 개발</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="3">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/b44b538507794c3f2cf76ac4b3393de1.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">관세청</p>
+                                    <p class="title ftc_white ftwB">수출차량 차대번호 인식조회 서비스 어플리케이션 개발</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="2">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/a0bfef7b604ae2b7315a3b0176203b73.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">관세청</p>
+                                    <p class="title ftc_white ftwB">북한 통관정보 어플리케이션 개발</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="portfolio_list" id="1">
+                        <div class="portfolio_list_inner">
+                            <a href="#">
+                                <div class="logo"><span></span></div>
+                                <div class="bg"><img src="/assets/data/project/13d68edbaab73134ee107d49d2a62672.png"
+                                        alt="ab_logo18"></div>
+                                <div class="info">
+                                    <p class="client ftc_666">대전시청</p>
+                                    <p class="title ftc_white ftwB">대전시청 승용차 요일제 모바일앱 유지보수</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+        </div>
+        <!-- popup start-->
+
+        <div class="pop_warp_bg pop_warp_bg15">
+            <div class="pop_warp pop_warp15 portfolio_pop portfolio_list" id="15">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">한국철도공사</span>
+                                <span class="tit">경영정보시스템 고도화</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/b59116ffab769e687d357adee131957a.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 한국철도공사</a></li>
+                                    <li><a href=""># 고도화</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg14">
+            <div class="pop_warp pop_warp14 portfolio_pop portfolio_list" id="14">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">i · origin</span>
+                                <span class="tit">FTA 솔루션 고도화</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/ff98edcf17e0982f741a0154d1ccf361.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># i · origin</a></li>
+                                    <li><a href=""># 고도화</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg13">
+            <div class="pop_warp pop_warp13 portfolio_pop portfolio_list" id="13">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">통계청</span>
+                                <span class="tit">SGIS 일자리맵</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/7ff56cf3a90de088a3c5e2fe2a42318a.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 통계청</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg12">
+            <div class="pop_warp pop_warp12 portfolio_pop portfolio_list" id="12">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">통계청</span>
+                                <span class="tit">SGIS 총조사시각화지도 </span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/88a663de1eef6c4bf0145c664e072fa3.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 통계청</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop_warp_bg pop_warp_bg11">
+            <div class="pop_warp pop_warp11 portfolio_pop portfolio_list" id="11">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">통계청</span>
+                                <span class="tit">SGIS My통계로</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/ce90638f61edb52055c5092c9d18f405.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 통계청</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pop_warp_bg pop_warp_bg10">
+            <div class="pop_warp pop_warp10 portfolio_pop portfolio_list" id="10">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">소상공인진흥공단</span>
+                                <span class="tit">상권정보시스템 서비스 고도화</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/ae7faf308067104ff9b2d71863a47c43.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 소상공인진흥공단</a></li>
+                                    <li><a href=""># 고도화</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg9">
+            <div class="pop_warp pop_warp9 portfolio_pop portfolio_list" id="9">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">신한관세법인 </span>
+                                <span class="tit">KORD 베트남 FTA 솔루션 구축</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/fe11adc8c441fd8ffc961ebcc26e0eb4.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 신한관세법인</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg8">
+            <div class="pop_warp pop_warp8 portfolio_pop portfolio_list" id="8">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">㈜지앤네트웍스</span>
+                                <span class="tit">지앤샵 모바일 쇼핑몰 구축</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/aa85b1de5fc8ba9500791e4589a3e46f.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># ㈜지앤네트웍스</a></li>
+                                    <li><a href=""># 모바일앱</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg7">
+            <div class="pop_warp pop_warp7 portfolio_pop portfolio_list" id="7">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">관세청</span>
+                                <span class="tit">WCO ESA ROCB 웹사이트 개발</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/b5b26b24d6cf669b6701cd91e165dd1b.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 관세청</a></li>
+                                    <li><a href=""># 웹사이트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg6">
+            <div class="pop_warp pop_warp6 portfolio_pop portfolio_list" id="6">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">관세청</span>
+                                <span class="tit">RILO AP 웹사이트 개발</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/ce0e3313ccd699273797c21ccaed1856.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 관세청</a></li>
+                                    <li><a href=""># 웹사이트</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg4">
+            <div class="pop_warp pop_warp4 portfolio_pop portfolio_list" id="4">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">관세청</span>
+                                <span class="tit">포트패스 어플리케이션 개발</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/92549a0eab817eb72d17dd46cf1ffcd6.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 관세청</a></li>
+                                    <li><a href=""># 모바일앱</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_warp_bg pop_warp_bg3">
+            <div class="pop_warp pop_warp3 portfolio_pop portfolio_list" id="3">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">관세청</span>
+                                <span class="tit">수출차량 차대번호 인식조회 서비스 어플리케이션 개발</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/04581498c1067d0266e63852926dffc8.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 관세청</a></li>
+                                    <li><a href=""># 모바일앱</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pop_warp_bg pop_warp_bg2">
+            <div class="pop_warp pop_warp2 portfolio_pop portfolio_list" id="2">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">관세청</span>
+                                <span class="tit">북한 통관정보 어플리케이션 개발</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/f6e9f97ef8ce0bdb61fb4058815f5d34.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 관세청</a></li>
+                                    <li><a href=""># 모바일앱</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="pop_warp_bg pop_warp_bg1">
+            <div class="pop_warp pop_warp1 portfolio_pop portfolio_list" id="1">
+                <div class="content_wrap">
+                    <div class="container">
+                        <div class="pop_title mgb40">
+                            <h3 class="sub_tit">
+                                <span class="sub ftw400 ftc_999">대전시청</span>
+                                <span class="tit">대전시청 승용차 요일제 모바일앱 유지보수</span>
+                                <span class="ico pop_close"><img src="/assets/img/icon/pop_close.png"
+                                        alt="pop_close"></span>
+                            </h3>
+                        </div>
+                        <div class="portfolio_pop_con">
+                            <div class="img_area mgb50">
+                                <img class="" src="/assets/data/project/1e09df4600a9e1d76164e67f9db83aa4.png"
+                                    alt="pop_close">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">
+                                    <span class="mgr10"><img src="/assets/img/icon/pop_tag.png" alt="pop_tag"></span>
+                                    <span class="en_txt ftwB">Tag</span>
+                                </div>
+                                <ul class="tag_group">
+                                    <li><a href=""># 대전시청</a></li>
+                                    <li><a href=""># 모바일앱</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

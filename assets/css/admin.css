@@ -1,0 +1,279 @@
+html {
+   overflow-y: scroll;
+   width: 100%;
+   overflow-x: hidden;
+}
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 0.75em;
+   font-family: 'Noto Sans KR', 'Montserrat', dotum, sans-serif;
+   color: #111;
+   background: #fff;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+img {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: 1em;
+   font-family: 'Noto Sans KR', 'Montserrat', dotum, sans-serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+ol,
+li,
+dl,
+dt,
+dd {
+   margin: 0;
+   padding: 0;
+}
+legend {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   font-size: 0;
+   line-height: 0;
+   text-indent: -9999em;
+   overflow: hidden;
+}
+label,
+input,
+button,
+select,
+img {
+   vertical-align: middle;
+}
+input,
+button {
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', 'appleSDGR', 'Noto Sans KR', dotum, sans-serif;
+   font-size: 1em;
+}
+button {
+   cursor: pointer;
+}
+textarea,
+select {
+   font-family: 'Montserrat', 'appleSDGR', 'Noto Sans KR', dotum, sans-serif;
+   font-size: 1em;
+}
+select {
+   margin: 0;
+}
+p {
+   margin: 0;
+   padding: 0;
+   word-break: break-all;
+}
+hr {
+   display: none;
+}
+pre {
+   overflow-x: scroll;
+   font-size: 1.1em;
+}
+a {
+   color: #fff;
+   text-decoration: none;
+}
+.en_txt {
+   font-family: 'Montserrat', dotum, sans-serif !important;
+   letter-spacing: 0 !important;
+}
+
+input[type='text'],
+input[type='password'],
+textarea {
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   outline: none;
+}
+
+html,
+body {
+   height: 100%;
+}
+.uk-logo,
+.uk-logo:hover,
+.uk-logo:active,
+.uk-logo:visited {
+   color: #ffffff;
+}
+
+.uk-navbar-toggle,
+.uk-navbar-toggle:hover,
+.uk-navbar-toggle:active,
+.uk-navbar-toggle:visited {
+   color: #ffffff;
+   padding-top: 2px;
+}
+.uk-navbar-container {
+   background-color: #1e87f0 !important;
+}
+.user > #name {
+   font-size: 22px;
+}
+.header {
+   box-sizing: border-box;
+   border-bottom: 1px #e5e5e5 solid;
+}
+.content-padder {
+   margin-left: 0px;
+}
+.content-background {
+   min-height: calc(100% - 570px);
+   background-color: #f0f0f0;
+}
+.statistics-text {
+   font-size: 25px;
+}
+.statistics-number {
+   font-size: 50px;
+}
+
+.tm-sidebar-left {
+   position: fixed;
+   z-index: 100;
+   top: 50px;
+   bottom: 0;
+   box-sizing: border-box;
+   width: 240px !important;
+   padding: 40px 40px 60px 40px;
+   border-right: 1px #e5e5e5 solid;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+.tm-sidebar-left::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   background-color: #f5f5f5;
+}
+
+.tm-sidebar-left::-webkit-scrollbar {
+   width: 6px;
+   background-color: #f5f5f5;
+}
+
+.tm-sidebar-left::-webkit-scrollbar-thumb {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   background-color: #bdbdbd;
+}
+
+.tm-sidebar-right {
+   position: absolute;
+   top: 0;
+   left: calc(100% + 0px);
+   width: 200px;
+}
+@media (max-width: 960px) {
+   .tm-sidebar-left {
+      opacity: 0;
+   }
+}
+
+@media (min-width: 960px) {
+   .content-padder {
+      margin-left: 240px;
+   }
+}
+@media (min-width: 1200px) {
+   .tm-sidebar-right {
+      left: calc(100% + 0px);
+   }
+   .tm-sidebar-left + .tm-main {
+      padding-left: 40px;
+      opacity: 0 !important;
+   }
+}
+@media (min-width: 1400px) {
+   .tm-sidebar-left {
+      width: 200px !important;
+      padding: 45px 25px 60px 25px;
+   }
+   .tm-sidebar-right {
+      left: calc(100% + 60px);
+   }
+   .tm-sidebar-left + .tm-main {
+      padding-left: 40px;
+   }
+   .content-padder {
+      margin-left: 200px;
+   }
+}
+
+::-webkit-scrollbar {
+   width: 7px;
+}
+::-webkit-scrollbar-track-piece {
+   background-color: #f0f0f0;
+   /*this can also be transparent*/
+}
+::-webkit-scrollbar-thumb:vertical {
+   width: 1px;
+   background-color: #1e87f0;
+   border-top: 4px solid #f0f0f0;
+   border-right: 3px solid #f0f0f0;
+   border-bottom: 4px solid #f0f0f0;
+   border-left: 3px solid #f0f0f0;
+}
+::selection {
+   background-color: #d1eefe;
+   color: #1e87f0;
+}
+::moz-selection {
+   background-color: #d1eefe;
+   color: #1e87f0;
+}
+
+.uk-table tbody tr:nth-child(2n-1) {
+   background: #fff;
+}
+
+.uk-label.label-custom {
+   background: #fff;
+   border: 1px solid #1e87f0;
+   color: #1e87f0;
+   font-size: 10px;
+   margin-right: 3px;
+   cursor: pointer;
+}
+
+.uk-table.contact_table th,
+.contact_table td {
+   text-align: center;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="ITBAND홈페이지 입니다.">
+    <title>무한한 가치를 더하다 - ITBAND</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <link rel="stylesheet" href="/assets/css/light.css">
+    <link rel="stylesheet" href="/assets/css/font.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/jquery.mousewheel.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/common.js"></script>
+</head>
+
+<body data-theme="">
+    <input type="hidden" value="light" id="mode">
+    <div id="wrap">
+        <header>
+            <div class="header_container">
+                <h1 class="logo">
+                    <a href="/intro"><img src="/assets/img/logo/logo_light.png" alt="logo"></a>
+                </h1>
+                <nav>
+                    <ul class="">
+                        <li><a id="about" href="/about" class="en_txt ftc_white ftwB" href="#">ABOUT</a></li>
+                        <li><a id="project" href="/project" class="en_txt ftc_white ftwB" href="#">PROJECT</a></li>
+                        <li><a id="people" href="/people" class="en_txt ftc_white ftwB" href="#">CULTURE</a></li>
+                        <li><a id="contact" href="/contact" class="en_txt ftc_white ftwB" href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="color_btn" onclick="changeMode()">
+                    <span class="en_txt ftw300">mode</span>
+                </a>
+                <div class="main_menu" onclick="menuTrigger()">
+                    <div type="button" name="" class="btn_open">
+                        <img src="/assets/img/icon/head_open_light.png" alt="head_open">
+                    </div>
+                    <div type="button" name="" class="btn_close">
+                        <img src="/assets/img/icon/head_close_light.png" alt="head_close">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu_open on">
+            <div class="menu_wrap">
+                <div class="menu_notice">
+                    <ul class="menu_top mgt60">
+                        <li><a href="/about" class="en_txt ftw600 ftc_666">About</a></li>
+                        <li><a href="/project" class="en_txt ftw600 ftc_666">Project</a></li>
+                        <li class="people"><a href="/people" class="en_txt ftw600 ftc_666">Culture</a>
+                        </li>
+                        <li><a href="/contact" class="en_txt ftw600 ftc_666">Contact us</a></li>
+                    </ul>
+                    <ul class="menu_bottom">
+                        <li class="mgr60">
+                            <a href="/assets/web/viewer.html?file=itbandCompany2022.pdf"><span><img
+                                        src="/assets/img/icon/sub_menu_icon01_light.png" alt="sub_menu_icon"></span><span
+                                    class="ftc_white">회사소개서</span></a>
+                            <br>
+                            <iframe src="/assets/web/viewer.html?file=itbandCompany2022.pdf"
+                                style="width:100%; display:none;"></iframe>
+                        </li>
+                        <li class="mgr60"><a href="mailto:help@itband.co.kr" class="en_txt ftc_white"><span><img
+                                        src="/assets/img/icon/sub_menu_icon02_light.png"
+                                        alt="sub_menu_icon"></span><span>help@itband.co.kr</span></a></li>
+                        <li><a href="tel:042-716-7088" class="en_txt ftc_white"><span><img
+                                        src="/assets/img/icon/sub_menu_icon03_light.png"
+                                        alt="sub_menu_icon"></span><span>042-716-7088</span></a></li>
+                    </ul>
+                    <ul class="menu_img">
+                        <img src="/assets/img/logo/logo02.png" alt="logo02">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu_bg"></div>
+        <div class="container scroll" data-menu="about">
+            <section class="ab_content notice first" id="section1">
+              <div class="con_inner">
+                <div class="con_left">
+                  <ul>
+                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><span class="en_txt ftc_white ftwB">About</span></li>
+                    <li class="tit" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><span class="cn ftwB ftc_666 en_txt">01</span><span class="line"></span></li>
+                    <li class="txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><span class="ftc_999">ITBAND는</span>
+                      <span class="ftc_white">온라인 서비스개발, SI용역 사업, 웹사이트 제작,<br>솔루션 판매사업 등</span><span class="ftc_999">의 다각화된 사업을 진행하고 있습니다.</span>
+                    </li>
+                    <li class="txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><span class="ftc_999">변화에 주저하지 않고, </span>
+                      <span class="ftc_white">고객의 니즈를 정확하게 파악하고<br>먼저 제안</span><span class="ftc_999">하는 진정한 비즈니스 파트너입니다.</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="con_right">
+                  <ul>
+                    <li><img src="/assets/img/copy/about_con02_01_light.png" alt="about_con02"></li>
+                    <li data-aos="fade-right" data-aos-duration="1000"><img src="/assets/img/copy/about_con02_02_light.png" alt="about_con02"></li>
+                    <li data-aos="fade-left" data-aos-duration="1000"><img src="/assets/img/copy/about_con02_03_light.png" alt="about_con02"></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="ab_content notice second" id="section2">
+              <div class="con_inner">
+                <div class="con_left" data-aos="fade-right" data-aos-duration="1000">
+                  <img src="/assets/img/copy/about_con03_light.png" alt="about_con02">
+                </div>
+                <div class="con_right">
+                  <ul>
+                    <li class="tit" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><span class="cn ftwB ftc_666 en_txt">02</span><span class="line"></span></li>
+                    <li class="txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><span class="en_txt ftc_white ftw500">SI/SM</span><span class="ftc_999">공공부문 시스템 구축 및 운영에 관한 SI사업 유지보수 업무 수행</span></li>
+                    <li class="txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><span class="en_txt ftc_white ftw500">Web service</span><span class="ftc_999">고객에게 새로운 부가가치를 제공하는 웹사이트와 모바일 웹사이트 개발</span></li>
+                    <li class="txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><span class="en_txt ftc_white ftw500">Mobile application</span><span class="ftc_999">모바일 디바이스에 최적화된 어플리케이션 개발</span></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="ab_content notice third" id="section3">
+              <div class="con_inner">
+                <div class="con_top">
+                  <ul>
+                    <li class="tit" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"><span class="ftc_white en_txt ftwB">ITBAND&nbsp;</span><span class="ftc_white ftwB">무한한 성장 가치를 더하다</span></li>
+                    <li class="txt ftc_999" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"><span>우리의 무한한 성장은 최초에서 최고로 성장할 것입니다.</span><br><span>변화에 주저하지 않고 다각화된 사업으로 현재에 만족하지 않고 끊임없이 성장합니다.</span></li>
+                  </ul>
+                </div>
+                <div class="con_bottom">
+                  <ul>
+                    <li><img src="/assets/img/about_con04_02_light.png" alt="about_con04"></li>
+                    <li>
+                      <p class="con04_line"><img src="/assets/img/about_con04_01_light.png" alt="about_con04"></p>
+                      <p class="con04_bg"></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="ab_content notice fourth" id="section4">
+              <div class="con_inner">
+                <div class="con_left">
+                  <ul>
+                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><img src="/assets/img/copy/about_con05_01_light.png" alt="about_con05"></li>
+                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><img src="/assets/img/copy/about_con05_02_light.png" alt="about_con05"></li>
+                  </ul>
+                </div>
+                <div class="con_right">
+                  <ul>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo01_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo02_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo03_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo04_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo05_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo06_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo07_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo08_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo09_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo10_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo11_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo12_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo13_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo14_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo15_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo16_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo17_light.png" alt="ab_logo"></a></li>
+                    <li class="mgt60"><a href="#"><img src="/assets/img/logo/ab_logo18_light.png" alt="ab_logo"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <div id="right_nav">
+              <ul>
+                <li><a href="#section1" class="scroll_move active"><span></span></a></li>
+                <li><a href="#section2" class="scroll_move"><span></span></a></li>
+                <li><a href="#section3" class="scroll_move"><span></span></a></li>
+                <li><a href="#section4" class="scroll_move"><span></span></a></li>
+              </ul>
+            </div>
+            <div class="scroll_icon">
+              <span class="txt en_txt ftc_999">SCROLL DOWN</span>
+              <span class="icon"></span>
+            </div>
+          </div>
+      
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+html, body {color:#111; background: #fff;}
+a {color:#111;}
+
+.ftc_white {color: #111 !important;}
+.ftc_black {color: #f7f8f9 !important;}
+.ftc_666 {color: #666 !important;}
+.ftc_999 {color: #999 !important;}
+.ftc_ccc {color: #ccc !important;}
+.ftc_blue {color: #04A6E1 !important;}
+.ftc_green {color: #1dcc64 !important;}
+
+.bg_blue {background: #04A6E1 !important;}
+.bg_green {background: #1dcc64 !important;}
+.bg_white {background: #000 !important;}
+.bg_black {background: #fff !important;}
+
+header.color_on {background: #fff; border-bottom: 1px solid rgba(0,0,0,0.05);}
+header nav ul li.on > a::after,
+header nav ul li:hover > a::after {background: #04A6E1;}
+header .main_menu .btn_open .menu_line {background: #000;}
+.sub_nav_bg {background: #111;}
+.sub_nav_bg .sub_nav_inner .sub_nav_wr li:hover a {color: #04A6E1;}
+
+.about_menu {border-bottom: 1px solid #191919;}
+.about_menu_inner li.on a {color: #04A6E1 !important;}
+.about_menu.fixed {background: #0a0a0a;}
+
+header.type02 .main_menu .btn_close .menu_line:nth-child(1) {background: #000;}
+header.type02 .main_menu .btn_close .menu_line.shot {background: #000;}
+
+.menu_bg {background: #fff;}
+.menu_open .menu_wrap .menu_notice .menu_top .sub_menu li a {color: #fff;}
+.menu_open .menu_wrap .menu_notice .menu_top > li.on > a {color: #111 !important; -webkit-text-stroke: 3px #111;}
+.menu_open .menu_wrap .menu_notice .menu_top > li.on > a::after {background: #04A6E1;}
+.menu_open .menu_wrap .menu_visual {background-image: url(../img/circle_377_light.png);}
+
+.main .main_visual .visual_inner .object_o {background: #000;}
+.main .main_shortcut .main_shortcut_inner_text {background: #4c4c4c;}
+.main .main_shortcut p {color: #000;}
+.color_btn::before,
+.color_btn::after {border: 1px solid #000;}
+.color_btn::before {background: #000;}
+.color_btn:hover::before,
+.color_btn:hover::after {border-color: #04A6E1; background: #04A6E1;}
+
+.ab_content.notice .line {background: #666;}
+.ab_content.notice.third .tit {color: #fff;}
+.ab_content.notice.third .con_bottom ul li:nth-child(2) .con04_bg {background: #fff;}
+
+#right_nav li a:after {background-color: rgba(0,0,0,0.1);}
+#right_nav li a span {background: #000;}
+
+.scroll_icon .icon {border: 2px solid #000;}
+.scroll_icon .icon::after {background-color: #000;}
+
+footer .contact {background: #f7f8f9;}
+
+.ct_content .con_inner .contact_inpt li input,
+.ct_content .con_inner .contact_inpt li.inpt_active input {border: 0; border-bottom: 0.5px solid #666; color: #000;}
+.ct_content .con_inner .contact_inpt li label,
+.ct_content .con_inner .contact_inpt li.inpt_active label {color: #999;}
+.ct_content .con_inner .contact_inpt li textarea {border-bottom: 0.5px solid #666; background: #fff; color: #000;}
+.ct_content .con_inner .contact_inpt li:last-child {border: 1px solid #000;}
+.ct_content .con_inner .contact_inpt ul li.send:hover {background: #04A6E1; border: 1px solid #04A6E1; color: #000;}
+.ct_content .con_inner .contact_inpt li.inpt_active input:focus ~ label,
+.ct_content .con_inner .contact_inpt li.inpt_active input.on ~ label {color: #04A6E1;}
+.ct_content .con_inner .contact_inpt li.inpt_active span {background: #04A6E1;}
+.ct_content .con_inner .contact_inpt li.inpt_active input:focus ~ span,
+.ct_content .con_inner .contact_inpt li.inpt_active input.on ~ span {color: #dadada;}
+.ct_content .con_inner .contact_inpt li.contact__agree .agree_txt input {color: #04A6E1;}
+.ct_content .con_inner .contact_inpt li.contact__agree button {color: #fff; border: 2px solid #fff;}
+.ct_content .con_inner .contact_inpt li.contact__agree button:hover {color: #04A6E1; border: 2px solid #04A6E1;}
+
+.pr_content.notice .filter > li {border-bottom: 0.5px solid #666;}
+.pr_content.notice .filter > li .portfolio_lnb {background: #fff; border: 0.5px solid #666;}
+.pr_content.notice .filter > li .portfolio_lnb li:hover {color: #04A6E1;}
+.pr_content.notice .filter > li .keyword {border: 0.5px solid #666; background: #fff; color: #000;}
+.pr_content.notice .filter > li a.select {background: url(../img/icon/ico_select_light.png) right 8px no-repeat;}
+.pr_content.notice .filter > li a.select.on {background: url(../img/icon/ico_select_on_light.png) right 8px no-repeat;}
+.pr_content.notice .filter > li .search {background: url(../img/icon/ico_search_light.png) center no-repeat #0a0a0a;}
+.pr_content.notice .gallery .portfolio_list .bg {background: #ededed;}
+.pr_content.notice .gallery > .portfolio_list a:hover .info {background: #04A6E1;}
+.pr_content.notice .gallery > .portfolio_list a:hover .info .client {color: #f7f8f9 !important;}
+.pr_content.notice .gallery > .portfolio_list a:hover .info .title {color: #f7f8f9 !important;}
+
+.pop_warp_bg {background: rgba(102, 102, 102, 0.5);}
+.pop_warp {background: #fff;}
+.pop_warp .content_wrap .container .portfolio_pop_con .img_area {background: #ededed;}
+.pop_warp .content_wrap .container .portfolio_pop_con .tag_area {border-top: 1px solid #666; border-bottom: 1px solid #666;}
+.pop_warp .content_wrap .container .portfolio_pop_con .tag_group li {border: 1px solid #000;}
+
+footer .foot_top {background: #f7f8f9;}
+footer .foot_top.type02 {background: #000; border-bottom: 1px solid #f7f8f9;}
+footer .foot_top > a > div .load_wrapp .load .foot_o {background-color: #000;}
