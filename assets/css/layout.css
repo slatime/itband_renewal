@@ -619,7 +619,7 @@ header.type02 .main_menu .btn_close .menu_line.shot {
    vertical-align: text-bottom;
 }
 .menu_open .menu_wrap .menu_notice .menu_img {
-  width: 300px;
+  width:300px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1335,6 +1335,7 @@ footer .contact .contact_inner .contact_center span:last-child {
    display: flex;
    margin-top: auto;
    flex-wrap: wrap;
+   gap: 20px;
 }
 .ct_content .con_inner .con_info,
 .ct_content .con_inner .contact_inpt {
@@ -1348,33 +1349,29 @@ footer .contact .contact_inner .contact_center span:last-child {
    font-size: 2rem;
 }
 .ct_content .con_inner .con_info .info li {
-   display: table;
-   /* display: inline-block; */
+   /* display: table; */
    font-size: 15px;
    line-height: 26px;
    display: flex;
 }
 .ct_content .con_inner .con_info .info li em {
-   display: table-cell;
+   /* display: table-cell; */
    width: 110px;
    flex-basis: 110px;
    font-style: normal;
 }
-/* .ct_content .con_inner .con_info .info li a {
+.ct_content .con_inner .con_info .info li a {
    flex: 2;
-} */
-.ct_content .con_inner .con_info .info li p {
-  display: table-cell;
-    /* flex: 2; */
 }
-/* .ct_content .con_inner .con_info .info li p.worbreak {
+
+.ct_content .con_inner .con_info .info li p{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
     flex: 2;
-    max-width: 260px;
-} */
+    max-width: 100%;
+}
 .ct_content .con_inner .con_info .info .btn span {
    margin-right: 4px;
    font-size: 14px;
