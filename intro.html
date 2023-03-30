@@ -24,8 +24,19 @@
 <body data-theme="">
     <input type="hidden" value="dark" id="mode">
     <div id="wrap">
-        <header>
+        <header style="background-color:rgba(0,0,0,0);">
             <div class="header_container">
+                <h1 class="logo">
+                    <a href="/intro"><img src="assets/img/logo/logo.png" alt="logo"></a>
+                </h1>
+                <nav>
+                    <ul class="">
+                        <li class="on"><a id="about" href="/about" class="en_txt ftc_white ftwB">ABOUT</a></li>
+                        <li><a id="project" href="/project" class="en_txt ftc_white ftwB">PROJECT</a></li>
+                        <li><a id="people" href="/people" class="en_txt ftc_white ftwB">CULTURE</a></li>
+                        <li><a id="contact" href="/contact" class="en_txt ftc_white ftwB">CONTACT US</a></li>
+                    </ul>
+                </nav>
                 <div class="main_menu circle_menu" onclick="menuTrigger()">
                 <!-- _light -->
                 <!-- <div class="main_menu" onclick="menuTrigger()"> -->
@@ -78,23 +89,30 @@
                 </div>
             </div>
         </div>
+
         <div class="menu_bg"></div>
         <div class="main">
-            <div class="video_box">
+            <!-- <div class="video_box">
                 <video controls autoplay muted loop>
                     <source src="assets/video/itband_video.mp4" type="video/mp4">
                     <source src="assets/video/itband_video.webm" type="video/webm">
                 </video>
-            </div>
-            <a href="tel:042-716-7088" class="tel_btn">
+            </div> -->
+            <!-- <a href="tel:042-716-7088" class="tel_btn">
                 <span class="btn_img"><img src="assets/img/logo/logo.png" alt="logo"></span>
-                <!-- <span class="btn_img"><img src="assets/img/logo/logo_light.png" alt="logo"></span> -->
+                <span class="btn_img"><img src="assets/img/logo/logo_light.png" alt="logo"></span>
                 <span class="txt en_txt ftwB">042-716-7088</span>
             </a>
             <a href="/project" class="project_btn">
                 <span class="btn_img"><img src="assets/img/icon/main_arrow.png" alt="main_btn" /></span>
                 <span class="txt en_txt ftwB">Go to project</span>
-            </a>
+            </a> -->
+
+            <div class="sloganArea">
+                <h1>WE ARE ITABND</h1>
+                <h4>아이티밴드는 다양한 디지털역량을 바탕으로<br>
+                    고객에게 힘이 되는 웹사이트를 제작합니다. </h4>
+            </div>
         </div>
     </div>
 </body>
