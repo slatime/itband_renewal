@@ -14,7 +14,7 @@ a {color:#f7f8f9;}
 .bg_white {background: #fff !important;}
 .bg_black {background: #000 !important;}
 
-header.color_on {background: #0a0a0a; border-bottom: 1px solid rgba(255,255,255,0.05);}
+header.color_on {background: #0a0a0a; border-bottom: 1px solid rgba(255,255,255,0.2);}
 header nav ul li.on > a::after,
 header nav ul li:hover > a::after {background: #147ce5;}
 header .main_menu .btn_open .menu_line {background: #fff;}

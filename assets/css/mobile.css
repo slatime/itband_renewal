@@ -1,20 +1,48 @@
 @media screen and (max-width:1080px) {
 /*반응형 수정 2023.03.28 유지혜 */
-.menu_open .menu_wrap .menu_notice .menu_img{display: none;}
-.pr_content.notice .gallery .portfolio_list .portfolio_list_inner{ max-width: 330px;}
+
+.pr_content.notice .gallery .portfolio_list .portfolio_list_inner{max-width: 100%; height: auto;    margin-bottom: 60px;}
+.pr_content.notice .gallery .portfolio_list .portfolio_list_inner .bg{ height: auto;}
+
+.pr_content.notice .gallery > li a .info .title{ word-break: break-all;}
+.pr_content.notice .gallery .portfolio_list .portfolio_list_inner .info{background: rgba(225,225,255,0.1);border-radius: 0 0 25px 25px;}
+
+.pop_warp .content_wrap .container .portfolio_pop_con .img_area{height: auto;}
+.pop_warp .content_wrap .container{max-width: 700px;}
+
+/* contact us */
+.ct_content.notice{max-width: 500px;}
 }
 @media screen and (max-width:768px) {
   /*반응형 수정 2023.03.28 유지혜  */
   html,body{font-size: 10px;}
+
   /* header  */
   header nav{display: none}
+  header{border-bottom: 1px solid #454545;}
   .header_container{margin: 0 2.5rem;}
   /* project */
-  .pr_content.notice .filter{flex-direction: column-reverse;}
+  .pr_content.notice .gallery .portfolio_list{max-width: 100%; padding-right: 0;}
+  .pr_content.notice h3{margin-top: 160px; margin-bottom: 60px;}
+  .pr_content.notice .filter > li{ flex-basis: 260px; flex-grow: 1;flex-shrink: 1;}
+  .pr_content.notice .filter > li:not(.search_area){margin-bottom: 20px; margin-right: 30px}
+  .pop_warp {border-radius: 30px;}
+  .pop_warp .content_wrap .container{max-width: 550px;}
+  .pop_warp .content_wrap{padding: 40px;}
+  .pop_warp .content_wrap .container .portfolio_pop_con .tag_area{flex-direction: column;}
+  .pop_warp .content_wrap .container .portfolio_pop_con .tag_area .tag{margin-bottom: 15px;}
+  .pop_warp .content_wrap .container .pop_title .sub_tit .tit{font-size: 25px}
+  /* contact us */
+  .ct_content .con_inner{ flex-direction: column;}
 
 
   }
 @media screen and (max-width:360px) {
-
-
-  }
+  .pr_content.notice .filter > li{ flex-basis:100%;}
+  .pr_content.notice .filter > li:not(.search_area){margin-right: 0px;}
+  .pr_content.notice h3{margin-top: 130px; margin-bottom: 30px;}
+  .pop_warp {margin-top: 60%;padding-bottom: 100px;}
+  .pop_warp span{font-size: 18px;}
+  .pop_warp .content_wrap .container .pop_title .sub_tit .tit{font-size: 22px}
+  .pop_warp .content_wrap .container .pop_title .sub_tit .ico.pop_close{width: 26px;}
+  .pop_warp .content_wrap .container .portfolio_pop_con .tag_group li {font-size: 14px;}
