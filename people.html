@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="assets/css/dark.css">
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- 스크롤플러그인 start-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- 스크롤플러그인 end-->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/jquery.mousewheel.min.js"></script>
@@ -21,6 +26,12 @@
 </head>
 
 <body data-theme="">
+    <!-- 스크롤플러그인 start-->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js" integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>     -->
+    <!-- 스크롤플러그인 end-->
     <input type="hidden" value="dark" id="mode">
     <div id="wrap">
         <header>
@@ -102,41 +113,64 @@
                         <ul>
                             <li class="mgb30" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
                                 data-aos-duration="1000"><span class="en_txt ftc_white ftwB">Culture</span></li>
-                            <li class="ftwB mgb70" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-                                data-aos-duration="1000"><span class="">아이티밴드의</span><br><span>복지문화는</span></li>
-                            <li class="ftc_999 txt mgb20" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-                                data-aos-duration="1000"><span class="">기업이 추구하는 관행에서 벗어나<br>직원들과 함께 만들어가는
-                                    조직문화입니다.</span></li>
+                            <li class="ftwB mgb60" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                                data-aos-duration="1000"><span class="">아이티밴드의</span><br><span class="pl">복지문화는</span>
+                            </li>
                             <li class="ftc_999 txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-                                data-aos-duration="1000"><span class="">아이티밴드 크루들의 하모니를 통해<br>세상을 더욱 크리에이티브하게
-                                    만듭니다.</span></li>
+                                data-aos-duration="1000">
+                                <!-- <span class="">기업이 추구하는 관행에서 벗어나
+                                    <br>직원들과 함께 만들어가는
+                                    조직문화입니다.
+                                </span> -->
+                                <span class="whiteSpace">
+                                    <strong>기업이 추구하는 관행에서 벗어나</strong>
+                                    <strong>직원들과 함께 만들어가는 조직문화입니다.</strong>
+                                </span>
+                            </li>
+                            <li class="ftc_999 txt" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                                data-aos-duration="1000">
+                                <!-- <span class="">아이티밴드 크루들의 하모니를 통해
+                                    <br>세상을 더욱 크리에이티브하게
+                                    만듭니다.
+                                </span> -->
+                                <span class="whiteSpace">
+                                    <strong>아이티밴드 크루들의 하모니를 통해</strong>
+                                    <strong>세상을 더욱 크리에이티브하게 만듭니다.</strong>
+                                </span>
+                            </li>
                         </ul>
                     </div>
                     <div class="con_right">
                         <ul>
                             <li class="item_bg item_01 mgr80 mgb100">
-                                <span class=""><img src="assets/img/people_culture_item_01.png"
-                                        alt="people_culture_item"></span>
+                                <span class="">
+                                    <img src="assets/img/people_culture_item_01.png" alt="people_culture_item">
+                                </span>
                             </li>
                             <li class="item_bg item_02 mgr80 mgb100">
-                                <span class=""><img src="assets/img/people_culture_item_02.png"
-                                        alt="people_culture_item"></span>
+                                <span class="">
+                                    <img src="assets/img/people_culture_item_02.png" alt="people_culture_item">
+                                </span>
                             </li>
                             <li class="item_bg item_03 mgb100">
-                                <span class=""><img src="assets/img/people_culture_item_03.png"
-                                        alt="people_culture_item"></span>
+                                <span class="">
+                                    <img src="assets/img/people_culture_item_03.png" alt="people_culture_item">
+                                </span>
                             </li>
                             <li class="item_bg item_04 mgr80">
-                                <span class=""><img src="assets/img/people_culture_item_04.png"
-                                        alt="people_culture_item"></span>
+                                <span class="">
+                                    <img src="assets/img/people_culture_item_04.png" alt="people_culture_item">
+                                </span>
                             </li>
                             <li class="item_bg item_05 mgr80">
-                                <span class=""><img src="assets/img/people_culture_item_05.png"
-                                        alt="people_culture_item"></span>
+                                <span class="">
+                                    <img src="assets/img/people_culture_item_05.png" alt="people_culture_item">
+                                </span>
                             </li>
                             <li class="item_bg item_06">
-                                <span class=""><img src="assets/img/people_culture_item_06.png"
-                                        alt="people_culture_item"></span>
+                                <span class="">
+                                    <img src="assets/img/people_culture_item_06.png" alt="people_culture_item">
+                                </span>
                             </li>
                         </ul>
                         <!-- <ul>
@@ -147,6 +181,7 @@
                 <li class="item_bg mgr80"><img src="./img/people_culture_item05.gif" alt="people_culture_item"></li>
                 <li class="item_bg"><img src="./img/people_culture_item06.gif" alt="people_culture_item"></li>
               </ul> -->
+
                     </div>
                 </div>
             </section>
@@ -164,6 +199,7 @@
                         </div>
                     </div>
                     <div class="con_bottom">
+                        <div class="ScrollBar">
                         <ul>
                             <li class="icon_bg icon_01 mgr50 mgb50">
                                 <span><img src="assets/img/icon/people_culture_icon_01.png"
@@ -226,6 +262,7 @@
                                 <span class="ftc_999">기타 필요한 건 언제든지!</span>
                             </li>
                         </ul>
+                        <div>
                     </div>
                 </div>
             </section>
