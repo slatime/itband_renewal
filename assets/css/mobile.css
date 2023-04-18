@@ -23,8 +23,24 @@
   .pc_content.notice.second .con_inner .con_top {margin-top: 100px; padding:0 50px;}
   .pc_content.notice.second .con_inner .con_bottom ul .icon_bg {width:20%; margin: 0;}
   .pc_content.notice.second .con_inner .con_top .txt.mgb50 {margin-bottom: 20px;}
+}
+@media screen and (max-width:1200px) {
+   /* about */
+  .ab_content.notice .con_inner{width: 100%;}
+  .con_left{margin: 0 24px 0 0;}
+
+   /* people */
+  .pc_content.notice.first .con_inner .con_left ul li:nth-child(2) {font-size:75px;}
+  .pc_content.notice.first .con_inner .con_right ul {width:600px;}
+  .pc_content.notice.first .con_inner .con_right ul .item_bg {}
+
+  .pc_content.notice.second .con_inner div {width:100%; box-sizing: border-box;}
+  .pc_content.notice.second .con_inner .con_top {margin-top: 100px; padding:0 50px;}
+  .pc_content.notice.second .con_inner .con_bottom ul .icon_bg {width:20%; margin: 0;}
+  .pc_content.notice.second .con_inner .con_top .txt.mgb50 {margin-bottom: 20px;}
   
   .pc_content.notice.third .con_inner ul{width: 100%;}
+
 
 }
 @media screen and (max-width:1080px) {
@@ -382,5 +398,3 @@ header nav ul li{margin-right: 40px;}
   .pc_content.notice.first .con_inner .con_left ul li:nth-child(2) span {font-size:34px;}
   .pc_content.notice.first .con_inner .con_right ul {margin-top:50px;}
 }
-
-
