@@ -1385,12 +1385,12 @@ footer .contact .contact_inner .contact_center span:last-child {
 }
 
 .ct_content .con_inner .con_info .info li p{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
-    flex: 2;
-    max-width: 100%;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   word-break: break-all;
+   flex: 2;
+   max-width: 100%;
 }
 .ct_content .con_inner .con_info .info .btn span {
    margin-right: 4px;
@@ -1411,7 +1411,7 @@ footer .contact .contact_inner .contact_center span:last-child {
    background-color: transparent;
    font-size: 16px;
    /* ------ */
-   z-index: 999;
+   z-index: 1;
    position: relative;
 }
 .ct_content .con_inner .contact_inpt li label,
@@ -1422,7 +1422,7 @@ footer .contact .contact_inner .contact_center span:last-child {
    width: 100%;
    font-size: 15px;
    transition: all 0.3s;
-   z-index: -1px;
+   z-index: 0;
    font-weight: 300;
 }
 .ct_content .con_inner .contact_inpt li.inpt_file label {
